@@ -45,3 +45,11 @@ Route::get('/editberita/{id}','beritaController@edit');
 Route::post('/aksitambahberita','beritaController@aksitambah');
 Route::post('/aksieditberita/{id}','beritaController@aksiedit');
 Route::get('/hapusberita/{id}','beritaController@hapus');
+
+Route::get('/gojek','gojekController@index');
+Route::get('/gojek/edit/{id}','gojekController@edit');
+Route::post('/gojek/doEdit', 'gojekController@aksiEdit');
+
+Route::get('/rekening','rekeningController@index');
+Route::get('/rekening/edit/{id}','rekeningController@edit');
+Route::post('/rekening/doEdit', 'rekeningController@aksiEdit');
